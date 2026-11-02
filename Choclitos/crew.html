@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the universe with Space Tourism.">
+  <title>Space Tourism | Crew</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Bellefair&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="crew-page">
+  <header class="header">
+    <a href="home.html" class="logo" aria-label="Space Tourism - Home">
+      <img src="assets/images/logo.png" alt="Space Tourism">
+    </a>
+    <div class="header-line" aria-hidden="true"></div>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Open navigation" aria-expanded="false" aria-controls="navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navigation" id="navigation" aria-label="Main navigation">
+      <a href="home.html" data-page="home">   INICIO   </a>
+      <a href="index.html" data-page="destination">NUESTROS DEPORTES</a>
+      <a href="crew.html" data-page="crew">BENEFICIOS</a>
+      <a href="technology.html" data-page="technology">REGALOS</a>
+      <button class="subscribe-button" id="openSubscribe" type="button">
+    REGISTRO
+</button>
+    </nav>
+  </header>
+  <main class="inner-page crew-section">
+    <div class="crew-content">
+      <section class="crew-info">
+        <p class="crew-role" id="crewRole">Commander</p>
+        <h2 id="crewName">Douglas Hurley</h2>
+        <p class="crew-description" id="crewDescription">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+          and former NASA astronaut. He launched into space for the third time as
+          commander of Crew Dragon Demo-2.
+        </p>
+        <div class="crew-controls" aria-label="Choose crew member">
+          <button class="crew-dot active" data-crew="0" type="button" aria-label="Douglas Hurley" aria-pressed="true"></button>
+          <button class="crew-dot" data-crew="1" type="button" aria-label="Mark Shuttleworth" aria-pressed="false"></button>
+          <button class="crew-dot" data-crew="2" type="button" aria-label="Victor Glover" aria-pressed="false"></button>
+          <button class="crew-dot" data-crew="3" type="button" aria-label="Anousheh Ansari" aria-pressed="false"></button>
+        </div>
+      </section>
+      <section class="crew-image-container">
+        <img src="assets/images/crew-douglas-hurley.png" id="crewImage"
+          alt="Douglas Hurley" class="crew-image">
+      </section>
+    </div>
+  </main>
+  <!-- SUBSCRIPTION MODAL -->
+<div class="subscribe-overlay" id="subscribeModal"
+     aria-hidden="true">
+
+    <div class="subscribe-modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="subscribeTitle">
+
+        <button class="close-modal"
+                id="closeSubscribe"
+                type="button"
+                aria-label="Cerrar ventana">
+            &times;
+        </button>
+
+        <div class="subscribe-content">
+
+            <span class="subscribe-label">
+                SPACE TOURISM
+            </span>
+
+            <h2 id="subscribeTitle">
+                JOIN THE EXPLORATION
+            </h2>
+
+            <p>
+                Subscribe to receive exclusive news,
+                space discoveries and future travel updates.
+            </p>
+
+            <form id="subscribeForm">
+
+                <label for="subscriberEmail">
+                    EMAIL ADDRESS
+                </label>
+
+                <input
+                    type="email"
+                    id="subscriberEmail"
+                    name="email"
+                    placeholder="example@email.com"
+                    autocomplete="email"
+                    required
+                >
+
+                <button type="submit" class="submit-subscribe">
+                    SUBSCRIBE NOW
+                </button>
+
+                <p id="subscribeMessage"
+                   class="subscribe-message"
+                   role="status"
+                   aria-live="polite">
+                </p>
+
+            </form>
+
+            <small>
+                By subscribing, you agree to receive
+                Space Tourism updates.
+            </small>
+
+        </div>
+    </div>
+</div>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
